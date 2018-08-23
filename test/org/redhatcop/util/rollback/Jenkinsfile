@@ -1,5 +1,8 @@
 
-@Library('cop-library') _
+
+library identifier: "pipeline-library@master", retriever: modernSCM(
+  [$class: "GitSCMSource",
+   remote: "https://github.com/syvanen/pipeline-library.git", branch: "pr19"])
 
 node ('maven') {
   stage('Code Build') {
