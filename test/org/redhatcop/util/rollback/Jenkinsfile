@@ -1,6 +1,6 @@
 
 
-library identifier: "pipeline-library@master", retriever: modernSCM(
+library identifier: "pipeline-library@pr19", retriever: modernSCM(
   [$class: "GitSCMSource",
    remote: "https://github.com/syvanen/pipeline-library.git", branch: "pr19"])
 
